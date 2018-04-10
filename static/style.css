@@ -2,9 +2,23 @@ body {
     background-color: rgb(255, 203, 5);
 }
 h1 {
-    color: darkblue;
+    color: rgb(0,39,76);
     font-family: Arial, Helvetica, sans-serif;
     font-size: 44;
+}
+
+form {
+  border: 3px solid black;
+  display: flex;
+  padding: 3px;
+  flex-direction: column;
+  width: 200px;
+}
+
+.selectGroup {
+  border: 1px solid black;
+  padding: 5px;
+  margin: 5px;
 }
 
 table, th, td {
