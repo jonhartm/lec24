@@ -23,6 +23,9 @@
         <th>Year</th>
         <th>Wins</th>
         <th>Losses</th>
+        {% if ties %}
+        <th>Ties</th>
+        {% endif %}
         <th>Win %</th>
     </tr>
 {% for s in seasons %}
@@ -31,6 +34,9 @@
         <td>{{s[3]}}</td>
         <td>{{s[4]}}</td>
         <td>{{s[5]}}</td>
+        {% if ties %}
+        <td>{{s[6]}}</td>
+        {% endif %}
     </tr>
 {% endfor %}
 </table>
